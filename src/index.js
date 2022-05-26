@@ -13,20 +13,20 @@
 /***
  *  アロー関数
  *
- */
-const func = (str) => {
-  return str;
-};
-console.log(func("funcです"));
+//  */
+// const func = (str) => {
+//   return str;
+// };
+// console.log(func("funcです"));
 
-//処理が1行の場合は{},return省略可能
-const func2 = (str) => str;
-console.log(func2("func2です"));
+// //処理が1行の場合は{},return省略可能
+// const func2 = (str) => str;
+// console.log(func2("func2です"));
 
-const func3 = (num1, num2) => {
-  return num1 + num2;
-};
-console.log(func3(10, 20));
+// const func3 = (num1, num2) => {
+//   return num1 + num2;
+// };
+// console.log(func3(10, 20));
 
 /***
  *  分割代入
@@ -81,13 +81,13 @@ console.log(func3(10, 20));
 // console.log(arr3);
 
 //配列のコピー、結合
-const arr4 = [10, 20];
-const arr5 = [30, 40];
+// const arr4 = [10, 20];
+// const arr5 = [30, 40];
 
-const arr6 = [...arr4];
-arr6[0] = 100;
-console.log(arr6);
-console.log(arr4);
+// const arr6 = [...arr4];
+// arr6[0] = 100;
+// console.log(arr6);
+// console.log(arr4);
 
 // const arr7 = [...arr4, ...arr5];
 // console.log(arr7);
@@ -97,3 +97,36 @@ console.log(arr4);
 // arr8[0] = 100;
 // console.log(arr8);
 // console.log(arr4);
+
+/***
+ *  mapやfilterを使った配列の処理
+ *
+ */
+const nameArr = ["田中", "山田", "じゃけぇ"];
+// for (let index = 0; index < nameArr.length; index++) {
+//   console.log(`${index + 1}番目は${nameArr[index]}です。`);
+// }
+
+// const nameArr2 = nameArr.map((name) => {
+//   return name;
+// });
+// console.log(nameArr2);
+
+// nameArr.map((name, index) =>
+//   console.log(`${index + 1}番目は${nameArr[index]}です。`)
+// );
+
+// const numArr = [1, 2, 3, 4, 5];
+// const newNumArr = numArr.filter((num) => {
+//   return num % 2 === 0;
+// });
+// console.log(newNumArr);
+
+// const newNameArr = nameArr.map((name) => {
+//   if (name === "じゃけぇ") {
+//     return name;
+//   } else {
+//     return `${name}さん`;
+//   }
+// });
+// console.log(newNameArr);
