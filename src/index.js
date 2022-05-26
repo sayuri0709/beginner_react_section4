@@ -44,10 +44,18 @@ console.log(func3(10, 20));
 // const message2 = `名前は${name}です。年齢は${age}歳です。`;
 // console.log(message2);
 
-const myProfile = ["じゃけえ", 28];
-const message3 = `名前は${myProfile[0]}です。年齢は${myProfile[1]}歳です。`;
-console.log(message3);
+// const myProfile = ["じゃけえ", 28];
+// const message3 = `名前は${myProfile[0]}です。年齢は${myProfile[1]}歳です。`;
+// console.log(message3);
 
-const [name, age] = myProfile;
-const messge4 = `名前は${name}です。年齢は${age}歳です。`;
-console.log(messge4);
+// const [name, age] = myProfile;
+// const messge4 = `名前は${name}です。年齢は${age}歳です。`;
+// console.log(messge4);
+
+/***
+ *  デフォルト値、引数など
+ *
+ */
+const sayHello = (name = "ゲスト") => console.log(`こんにちは！${name}さん！`);
+sayHello("じゃけぇ");
+sayHello();
